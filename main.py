@@ -1,7 +1,14 @@
-def main():
-    print("Hello from hello!")
+from dotenv import load_dotenv
+import os 
 
-name = "Mamidov"
+load_dotenv()
+my_veriable = os.getenv('MY_KEY')
 
-if __name__ == "__main__":
-    main()
+print(my_veriable)
+# def main():
+#     print("Hello from hello!")
+
+# name = "Mamidov"
+
+# if __name__ == "__main__":
+#     main()
